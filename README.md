@@ -17,7 +17,7 @@ This project presents a Smart Spam Detection System that classifies messages int
 4.  To allow the system to learn new words dynamically
 -------------------------------------------------------------------
 
-## 📌 How it works
+## 🧠 How it works
 -----------------------------------------------
 1. The system is trained using spam words such as win, free, money, lottery, etc., and ham words such as hello, tomorrow, meeting, project, etc.
 2. Users enter a message
@@ -32,7 +32,7 @@ This is the sample of Ham-
 
 ----------------------------------------------------------------------
 
-## 📌 Technologies used
+## 🚀 Technologies used
 ------------------------------------------------
 
 1. Python
@@ -47,7 +47,7 @@ This is the sample of Ham-
 3. run the file
 ----------------------------------------------------------------------
 
-## 📌 Examples
+## 📊 Examples
 ------------------------------------------------
 
 Input:
@@ -59,7 +59,7 @@ Result: Spam
 
 ----------------------------------------------------------------------
 
-## 📌 Future Improvements
+## 🎯 Future Improvements
 -------------------------------------------------
 
 1. Add GUI interface
