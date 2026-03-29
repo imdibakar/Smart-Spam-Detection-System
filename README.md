@@ -23,6 +23,9 @@ This project presents a Smart Spam Detection System that classifies messages int
 2. Users enter a message
 3. The message is converted to lowercase using .lower() and split into words
 4. The system checks that if any word matches with spam-"Spam" or else if it matches with ham- "Ham"
+
+<img width="429" height="164" alt="Screenshot 2026-03-29 193852" src="https://github.com/user-attachments/assets/a1735667-5066-4b20-befe-7568e8aa565d" />
+
 ----------------------------------------------------------------------
 
 ## 📌 Technologies used
