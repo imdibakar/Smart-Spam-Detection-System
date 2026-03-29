@@ -1,0 +1,71 @@
+spam_words=[
+"win","won","free","money","prize","lottery","offer","buy","urgent","reward","cash","bank","account","credit","lucky","otp","fraud","scam","virus","hack","click","here","now","limited","offer","discount","deal","promotion","sale","shop","order","delivery","fast","free","shipping","guarantee","refund","support"
+]
+ham_words=[
+  "hello","meeting","project","call","thanks","tomorrow","today","friend","meet","work","home","school","college","study","exam","test","class","teacher","student","parent","family","love","happy","sad","fun","game","sport","play","watch","read"
+]
+def classify(msg):
+  words=msg.lower().split()
+  
+
+  for word in words:
+    if word in spam_words:
+    
+      print("Detected spam word: ",word)
+      return "Spam!!"
+
+  for word in words:
+    if word in ham_words:
+
+      print("Detected ham word: ",word)
+    return "Ham"
+  return "Ham"
+
+def add_word():
+  word=input("Enter word: ").lower()
+  label=input("Is it spam or ham?").lower()
+  if label=="spam":
+    spam_words.append(word)
+    print("Added to spam words")
+  elif label=="ham":
+    ham_words.append(word)
+    print("Added to ham words")
+  else:
+    print("Invalid text")
+
+def show_words():
+  print("\nSpam words: ",spam_words)
+  print("Not Spam words: ",ham_words)
+
+
+while True:
+  print("\nSmart Spam Detection System ")
+  print("1. Check Message")
+  print("2. Add new word")
+  print("3. Show words")
+  print("4. Exit")
+ 
+
+  choice=input("Enter your choice: ")
+
+  if choice=="1":
+    msg=input("Enter message: ")
+    result=classify(msg)
+    print("Result: ",result)
+
+  elif choice=="2":
+    add_word()
+
+  elif choice=="3":
+    show_words()
+    
+  elif choice=="4":
+    print("Exiting")
+    break
+
+  else:
+    print("Invalid choice")
+
+
+  
+
